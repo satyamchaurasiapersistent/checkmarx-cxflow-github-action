@@ -1,5 +1,6 @@
 #Use CxFlow Base image
-FROM itskedar/mycxflow:satyam123
+FROM satyam9889331154/githubaction123:satyam_podmann
+
  
 #Copy script to import certs into Java cacerts keystore
 COPY scripts/keytool-import-certs.sh /app/keytool-import-certs.sh
