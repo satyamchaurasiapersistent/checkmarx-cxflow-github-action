@@ -142,7 +142,6 @@ inputs:
     required: false
     description: 'Jira Closed Status'
     default: ''
-
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -180,6 +179,7 @@ runs:
     - ${{ inputs.jira_open_status }}
     - ${{ inputs.jira_closed_status }}
 
+
   env:
     TEAM: "${{ inputs.team }}"
     PROJECT: ${{ inputs.project }}
@@ -215,6 +215,7 @@ runs:
     JIRA_CLOSE_TRANSITION: ${{ inputs.jira_close_transition }}
     JIRA_OPEN_STATUS: ${{ inputs.jira_open_status }}
     JIRA_CLOSED_STATUS: ${{ inputs.jira_closed_status }}
+
 
 branding:
   icon: 'check'
